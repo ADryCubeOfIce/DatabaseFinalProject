@@ -1,0 +1,12 @@
+<div class="content-box">
+    <h2>Edit Player</h2>
+    <app-player-data-form 
+        buttonText="Save Changes"
+        [currentFName]="player.firstName"
+        [currentLName]="player.lastName"
+        [currentGamertag]="player.gamertag"
+        [currentPlatform]="player.platform"
+        [currentAge]="player.age"
+        [currentRegion]="player.regionID"
+        (onSubmit)="onSubmit($event)"></app-player-data-form>
+</div>

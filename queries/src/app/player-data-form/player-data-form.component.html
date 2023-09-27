@@ -1,0 +1,46 @@
+<form (ngSubmit)="onButtonClicked()">
+    <div>
+        <label for="firstName">
+            First Name:
+        </label>
+        <input id="firstName" name="firstName" type="text" [(ngModel)]="firstName" />
+    </div>
+    <div>
+        <label for="lastName">
+            Last Name:
+        </label>
+        <input id="lastName" name="lastName" type="text" [(ngModel)]="lastName" />
+    </div>
+    <div>
+        <label for="gamertag">
+            Gamertag:
+        </label>
+        <input id="gamertag" name="gamertag" type="text" [(ngModel)]="gamertag" />
+    </div>
+    <div>
+        <label for="platform">
+            Platform:
+        </label>
+        <input id="platform" name="platform" type="text" [(ngModel)]="platform" />
+    </div>
+    <div>
+        <label for="age">
+            Age:
+        </label>
+        <input id="age" name="age" type="number" [(ngModel)]="age" />
+    </div>
+    <div>
+        <label for="region">
+            Region:
+        </label>
+        <select id="regionID" name="regionID" [(ngModel)]="regionID">
+            <option type="number" value="1">North America</option>
+            <option type="number" value="2">Europe</option>
+            <option type="number" value="3">Asia</option>
+            <option type="number" value="4">South America</option>
+            <option type="number" value="5">Australia</option>
+            <option type="number" value="6">Africa</option>
+        </select>
+    </div>
+    <button type="submit">{{buttonText}}</button>
+</form>

@@ -1,0 +1,37 @@
+<div class="'content-box" *ngIf="!isLoading">
+    <div class="content-box">
+        <h2>{{player.gamertag}}</h2>
+    </div>
+    <div class="content-box">
+        <p>Name: {{player.firstName}} {{player.lastName}}</p>
+    </div>
+    <div class="content-box">
+        <p>Age: {{player.age}}</p>
+    </div> 
+    <div class="content-box">
+        <p>Platform: {{player.platform}}</p>
+    </div>
+    <div class="content-box">
+        <p>Plays for: {{player.teamName}}</p>
+    </div>
+    <div class="content-box">
+        <p>Located in: {{player.regionName}}</p>
+    </div>
+    <div class="content-box">
+        <a routerLink="/edit-player/{{player.playerID}}">
+            <button>Edit</button>
+        </a>
+        <button (click)="onDeleteClicked(player.playerID)">Delete</button>
+        <a routerLink="/q1/{{player.playerID}}/add-leaderboard">
+            <button>Add Leaderboard Info</button>
+        </a>
+    </div>
+    <div class="content-box">
+        <a routerLink="/q1">
+            <button>Back</button>
+        </a>
+    </div>
+</div>
+<div class="content-box" *ngIf="isLoading">
+    <h3>Loading...</h3>
+</div>

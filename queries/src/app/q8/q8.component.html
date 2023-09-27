@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <h3>Get best game based on number of players multiplied by the average rating of the game</h3>
+    </div>
+    <div class="content-box" *ngFor="let game of BestGames">
+        <h3>{{game.gameName}} | {{game.score}}</h3>
+    </div>
+</div>
+<div class="content-box">
+    <a routerLink="/query">
+        <button>Back</button>
+    </a>
+</div>

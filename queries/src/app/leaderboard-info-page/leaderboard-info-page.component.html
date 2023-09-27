@@ -1,0 +1,28 @@
+<div class="'content-box">
+    <div class="content-box">
+        <h3>{{leaderboard.gamertag}} on {{leaderboard.gameName}}</h3>
+    </div>
+    <div class="content-box">
+        <h3>KDR: {{leaderboard.killDeathRatio}}</h3>
+    </div>
+    <div class="content-box">
+        <h3>WLR: {{leaderboard.winLossRatio}}</h3>
+    </div>
+    <div class="content-box">
+        <h3>Time Played: {{leaderboard.timePlayed}}</h3>
+    </div>
+    <div class="content-box">
+        <h3>Ranking: {{leaderboard.playerRank}}</h3>
+    </div>
+    <div class="content-box">
+        <a routerLink="/q5/update/{{leaderboard.playerID}}/{{leaderboard.gameID}}">
+            <button>Update Leaderboard Info</button>
+        </a>
+    </div>
+
+    <div class="content-box">
+        <a routerLink="/q5">
+            <button>Back</button>
+        </a>
+    </div>
+</div>

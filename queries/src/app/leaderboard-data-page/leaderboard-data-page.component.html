@@ -1,0 +1,37 @@
+<form (ngSubmit)="onButtonClicked()">
+    <div ng-controller="gameChange">
+        <label for="gameID">
+            Game:
+        </label>
+        <select id="gameID" name="gameID" [(ngModel)]="gameID">
+            <option type="number" value="1">Overwatch 2</option>
+            <option type="number" value="2">Valorant</option>
+            <option type="number" value="3">League of Legends</option>
+        </select>
+    </div>
+    <div>
+        <label for="timePlayed">
+            Time Played:
+        </label>
+        <input id="timePlayed" name="timePlayed" type="number" [(ngModel)]="timePlayed" />
+    </div>
+    <div>
+        <label for="winLossRatio">
+            Win Loss Ratio:
+        </label>
+        <input id="winLossRatio" name="winLossRatio" type="number" [(ngModel)]="winLossRatio" />
+    </div>
+    <div>
+        <label for="killDeathRatio">
+            Kill Death Ratio:
+        </label>
+        <input id="killDeathRatio" name="killDeathRatio" type="number" [(ngModel)]="killDeathRatio" />
+    </div>
+    <div>
+        <label for="playerRank">
+            Rank:
+        </label>
+        <input id="playerRank" name="playerRank" type="text" [(ngModel)]="playerRank" />
+    </div>
+    <button type="submit">{{buttonText}}</button>
+</form>

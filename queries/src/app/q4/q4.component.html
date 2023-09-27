@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <h3>All studios, the number of games they produced in the table, and ranks based on average rating </h3>
+    </div>
+    <div class="content-box" *ngFor="let studio of GamesByStudios">
+        <h3>{{studio.studioName}} | {{studio.num_games}} | {{studio.avg_rating}}</h3>
+    </div>
+</div>
+<div class="content-box">
+    <a routerLink="/query">
+        <button>Back</button>
+    </a>
+</div>

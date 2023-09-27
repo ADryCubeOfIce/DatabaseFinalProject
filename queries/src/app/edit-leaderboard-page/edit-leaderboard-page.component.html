@@ -1,0 +1,11 @@
+<div class="content-box">
+    <h2>Edit Leaderboard Info</h2>
+    <app-leaderboard-data-page 
+        buttonText="Save Changes"
+        [currentGameID]="leaderboard.gameID"
+        [currentTimePlayed]="leaderboard.timePlayed"
+        [currentKDR]="leaderboard.killDeathRatio"
+        [currentWLR]="leaderboard.winLossRatio"
+        [currentRank]="leaderboard.playerRank"
+        (onSubmit)="onSubmit($event)"></app-leaderboard-data-page>
+</div>

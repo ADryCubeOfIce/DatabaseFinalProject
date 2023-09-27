@@ -1,0 +1,15 @@
+<div>
+    <div>
+        <h3>All players and their rankings for each game they play</h3>
+    </div>
+    <div class="content-box" *ngFor="let player of TopPlayerByGames">
+        <a routerLink="/leaderboard/{{player.playerID}}/{{player.gameID}}">
+            <h3>{{player.gameName}} | {{player.firstName}} {{player.lastName}} | {{player.player_score}}</h3>
+        </a>
+    </div>
+</div>
+<div class="content-box">
+    <a routerLink="/query">
+        <button>Back</button>
+    </a>
+</div>

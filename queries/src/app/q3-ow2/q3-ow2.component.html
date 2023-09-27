@@ -1,0 +1,23 @@
+<div>
+    <div>
+        <h3>Top Players of Overwatch</h3>
+    </div>
+    <div class="content-box">
+        <a routerLink="/q3/2">
+            <button>Display Valorant query</button>
+        </a>
+        <a routerLink="/q3/3">
+            <button>Display League of Legends query</button>
+        </a>
+    </div>
+    <div class="content-box" *ngFor="let top of TopPerGames">
+        <a routerLink="/q1/{{top.playerID}}">
+            <h3>{{top.gamertag}} | W/L: {{top.winLossRatio}} | K/D: {{top.killDeathRatio}} | Hours Played: {{top.timePlayed}} | Rank: {{top.playerRank}}</h3>
+        </a>
+    </div>
+</div>
+<div class="content-box">
+    <a routerLink="/query">
+        <button>Back</button>
+    </a>
+</div>
